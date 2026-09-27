@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Telefonchi bola</title>
+</head>
+<body>
+    <h1>telefonchi_bola.marhamat</h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telefonchi Bola</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #080b16;
+    color: white;
+}
+
+/* Harakatlanuvchi fon */
+body::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, #00eaff, #7b2cff);
+    border-radius: 50%;
+    filter: blur(100px);
+    animation: move 6s infinite alternate ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-150px, -100px);
+    }
+    100% {
+        transform: translate(150px, 100px);
+    }
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    padding: 40px 25
